@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_DB: estufaio
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/initsql.sql:/docker-entrypoint-initdb.d/initsql.sql
