@@ -3,6 +3,6 @@ const estufaController = require('./controller/estufaController')
 
 const routes = Router()
 
-routes.get('/test', estufaController.index)
+routes.get('/info', estufaController.index)
 
 module.exports = routes;

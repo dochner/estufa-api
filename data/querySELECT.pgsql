@@ -1,0 +1,1 @@
+SELECT * FROM "estufa" LIMIT 1000;
